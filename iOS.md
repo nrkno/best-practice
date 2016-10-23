@@ -15,6 +15,36 @@ Refactor old sins to best of your current knowledge
   * If it isn't: Write comments for exceptional and complex code
 1. Readability trumps coolness
 
+## Spacing and Indentation
+
+* Indent using 4 spaces rather than tabs. This should be configured on the project.
+
+  ![Xcode indent settings](https://raw.githubusercontent.com/nrkno/best-practice/master/assets/xcode spacing.png)
+
+* Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
+* Don't use parentheses.
+* Tip: You can re-indent by selecting some code (or ⌘A to select all) and then Control-I (or Editor\Structure\Re-Indent in the menu).
+
+**Preferred:**
+```swift
+if video.isPlaying {
+    // Do something
+} else {
+    // Do something else
+}
+```
+
+**Not Preferred:**
+```swift
+if video.isPlaying
+{
+  // Do something
+}
+else {
+  // Do something else
+}
+```
+
 ## Discussions
 
 Accountability/ownership of code
