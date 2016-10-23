@@ -4,8 +4,6 @@ Always leave code cleaner than you found it, [Uncle Bob says](http://programmer.
 Write code like you care - both for the whole app and your individual part
 Refactor old sins to best of your current knowledge
 
-## Architecture
-
 ## Dokumentation
 
 1. Confluence is used for general documentation
