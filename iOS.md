@@ -1,4 +1,4 @@
-# Best practices for iOS development at NRK
+# NRK iOS Best Practices
 
 Always leave code cleaner than you found it, [Uncle Bob says](http://programmer.97things.oreilly.com/wiki/index.php/The_Boy_Scout_Rule)
 Write code like you care - both for the whole app and your individual part
