@@ -15,6 +15,44 @@ Refactor old sins to best of your current knowledge
   * If it isn't: Write comments for exceptional and complex code
 1. Readability trumps coolness
 
+## Comments
+
+ When they are needed, comments should be used to explain **why** a particular piece of code does something instead of **what**. Any comments that are used must be kept up-to-date or deleted.
+
+**Preferred:**
+
+```swift
+/**
+  so far this is the scroll-to-bottom method that works best with proper animation 
+  and no issues so far regardless of a scrollviews content size. if this looks and 
+  feels like a hack, it's because it is. by creating a rect that's 1x1, pointed at 
+  the bottom-right side of the scrollview's content and telling it to scroll there 
+  regardless of insets and offsets it will scroll to the very bottom.
+*/
+func scrollToBottom() {
+    let attemptsToRecreateUploadTasksForBackgroundSessions = self.collectionView.contentSize
+    let bottomRect = CGRect(x: contentSize.width - 1, y: contentSize.height - 1, width: 1, height: 1)
+    let visibleRect = self.collectionView.layer.visibleRect
+    if !visibleRect.intersects(bottomRect) {
+        self.collectionView.scrollRectToVisible(bottomRect, animated: true)
+    }
+}
+```
+
+**Not Preferred:**
+
+```swift
+// scrolls to the bottom of the view
+func scrollToBottom() {
+    let contentSize = self.collectionView.contentSize
+    let bottomRect = CGRect(x: contentSize.width - 1, y: contentSize.height - 1, width: 1, height: 1)
+    let visibleRect = self.collectionView.layer.visibleRect
+    if !visibleRect.intersects(bottomRect) {
+        self.collectionView.scrollRectToVisible(bottomRect, animated: true)
+    }
+}
+```
+
 ## Discussions
 
 Accountability/ownership of code
