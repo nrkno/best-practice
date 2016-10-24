@@ -17,9 +17,7 @@ Refactor old sins to best of your current knowledge
 
 ## Spacing and Indentation
 
-* Indent using 4 spaces rather than tabs. This should be configured on the project.
-
-[Xcode indent settings](https://raw.githubusercontent.com/nrkno/best-practice/master/assets/xcode spacing.png)
+* Indent using 4 spaces rather than tabs. This should be [configured on the project](https://raw.githubusercontent.com/nrkno/best-practice/master/assets/xcode spacing.png)
 
 * Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
 * Don't use parentheses.
