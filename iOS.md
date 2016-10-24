@@ -6,7 +6,7 @@ Refactor old sins to best of your current knowledge
 
 ## Architecture
 
-## Dokumentation
+## Documentation
 
 1. Confluence is used for general documentation
 1. HeaderDoc can be used for classes, structs, methods 
