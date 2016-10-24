@@ -1,15 +1,19 @@
-# Best practices for iOS development at NRK
+# NRK iOS Best Practices
 
 Always leave code cleaner than you found it, [Uncle Bob says](http://programmer.97things.oreilly.com/wiki/index.php/The_Boy_Scout_Rule)
 Write code like you care - both for the whole app and your individual part
 Refactor old sins to best of your current knowledge
 
-## Architecture
+## Xcode
+
+### Version
+
+The recommended version of Xcode (and Swift) for all purposes is the current available [in the App Store](https://itunes.apple.com/no/app/xcode/id497799835?mt=12).
 
 ## Documentation
 
 1. Confluence is used for general documentation
-1. HeaderDoc can be used for classes, structs, methods 
+1. [HeaderDoc](https://www.raywenderlich.com/66395/documenting-in-xcode-with-headerdoc-tutorial) can be used for classes, structs, methods 
 1. Code should be self explanatory and self explainatory as much as possible
   * If it is: Don't write comments for such code
   * If it isn't: Write comments for exceptional and complex code
