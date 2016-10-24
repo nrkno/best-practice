@@ -10,8 +10,6 @@ Refactor old sins to best of your current knowledge
 
 The recommended version of Xcode (and Swift) for all purposes is the current available [in the App Store](https://itunes.apple.com/no/app/xcode/id497799835?mt=12).
 
-## Architecture
-
 ## Dokumentation
 
 1. Confluence is used for general documentation
