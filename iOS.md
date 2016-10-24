@@ -4,6 +4,12 @@ Always leave code cleaner than you found it, [Uncle Bob says](http://programmer.
 Write code like you care - both for the whole app and your individual part
 Refactor old sins to best of your current knowledge
 
+## Xcode
+
+### Version
+
+The recommended version of Xcode (and Swift) for all purposes is the current available [in the App Store](https://itunes.apple.com/no/app/xcode/id497799835?mt=12).
+
 ## Architecture
 
 ## Dokumentation
