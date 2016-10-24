@@ -1,5 +1,5 @@
 # Best Practice
-Best practice guide to (at start) programming native apps in NRK
+Best practice guide to programming at NRK
 
 [iOS](iOS.md)
 
