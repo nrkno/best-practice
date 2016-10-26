@@ -6,6 +6,8 @@ Refactor old sins to best of your current knowledge
 
 ## Xcode
 
+Groups in Xcode should match folders on disk.
+
 ### Version
 
 The recommended version of Xcode (and Swift) for all purposes is the current available [in the App Store](https://itunes.apple.com/no/app/xcode/id497799835?mt=12).
@@ -80,6 +82,38 @@ func scrollToBottom() {
     }
 }
 ```
+
+## Methods
+
+Methods should be as short and readable as possible and do one thing  
+Preferably only one return statement/one expected exit  
+* Preconditioning can be one way of achieving this
+
+## Code Quality
+
+Fix warnings, treat warnings as errors. [How to set this in Xcode](assets/warnings-as-errors.png)  
+Use named constats, enums and structs. Don't use "magical" numbers or strings
+* Tip: If you have to search for strings in general code  
+
+Put constants in its rightful place; in the class if only used in one class or in a shared class if used multiple places  
+Be conscious of access control, restrict access to parts of your code that's private. Also for UI elements (IBOutlets).  
+UserDefaults.synchronize blocks the UI thread, generally never use this method  
+Never block the UI thread. IO, calculation, etc, should be done in background threads  
+
+
+
+
+
+## Building User Interface
+
+Use Storyboards, Xibs and code according to need.  
+Use Storyboards for navigation and relationship between views  
+Keep Storyboards maintainable sizewise - use multiple smaller ones instead of one large  
+Use auto layout, contraints, size classes and stackviews to reuse interfaces between multiple screensizes  
+Use bounds and frame correctly
+Use designable and inspectable  
+Use xibs for reusable components  
+
 
 ## Discussions
 
