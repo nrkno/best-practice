@@ -97,11 +97,6 @@ Use named constats, enums and structs. Don't use "magical" numbers or strings
 
 Put constants in its rightful place; in the class if only used in one class or in a shared class if used multiple places  
 Be conscious of access control, restrict access to parts of your code that's private. Also for UI elements (IBOutlets).  
-Never block the UI thread. IO, calculation, etc, should be done in background threads  
-
-
-
-
 
 ## Building User Interface
 
