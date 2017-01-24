@@ -97,7 +97,6 @@ Use named constats, enums and structs. Don't use "magical" numbers or strings
 
 Put constants in its rightful place; in the class if only used in one class or in a shared class if used multiple places  
 Be conscious of access control, restrict access to parts of your code that's private. Also for UI elements (IBOutlets).  
-UserDefaults.synchronize blocks the UI thread, generally never use this method  
 
 ## Building User Interface
 
