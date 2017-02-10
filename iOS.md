@@ -103,7 +103,6 @@ Be conscious of access control, restrict access to parts of your code that's pri
 Use Storyboards for navigation and relationship between views  
 Keep Storyboards maintainable sizewise - use multiple smaller ones instead of one large  
 Use auto layout, contraints, size classes and stackviews to reuse interfaces between multiple screensizes  
-Use bounds and frame correctly
 Use designable and inspectable  
 Use xibs for reusable components  
 
