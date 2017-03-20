@@ -5,9 +5,7 @@ This guide outlines the coding conventions of the different development teams at
 
 [Android](Android.md)
 
-[Add new plattform](https://github.com/nrkno/best-practice/pulls).
-
-## Agile/lean development
+[Add new plattform](https://github.com/nrkno/best-practice/pulls)
 
 ## Code process
 - Code review
