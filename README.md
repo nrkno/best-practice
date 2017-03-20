@@ -1,23 +1,16 @@
 # Best Practice
-Best practice guide to programming at NRK
+This guide outlines the coding conventions of the different development teams at NRK. We welcome your feedback in issues and pull requests. Also, [we’re hiring](https://www.nrk.no/stilling/). 
 
 [iOS](iOS.md)
 
 [Android](Android.md)
 
-## Agile/lean development
+[Add new plattform](https://github.com/nrkno/best-practice/pulls)
 
 ## Code process
--code review
-
-## Versioncontrolsystem
-
-## Testing
-
-## Automated build, test, release systems
-
-[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
+- Code review
+- Agile/lean development
+- Testing
 
 ### How to participate
 
@@ -25,3 +18,5 @@ Best practice guide to programming at NRK
 * Get approval from 2 developers in relevant team
 * Let the rest of the team know of the approved practice
 * If no-one objects, merge in the change, if not the issue will be discussed and voted for/against
+
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
