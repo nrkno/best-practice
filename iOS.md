@@ -107,6 +107,31 @@ Use designable and inspectable
 Use xibs for reusable components  
 
 
+## Linting
+
+In order to ensure both consistent code formatting and help us conform to established best practices we use linters in our projects.
+
+#### SwiftLint
+[SwiftLint](https://github.com/realm/SwiftLint) is used in Swift based projects.
+
+#### Installation
+
+[SwiftLint](https://github.com/realm/SwiftLint) can be installed locally (Homebrew/pre-built package) or added to your project as a CocoaPods package.
+
+**TODO:** Decide local Installation vs CocoaPods
+
+#### When to run
+Since SwiftLint is quite fast, our recommended setup is to run linting as part of the build process in XCode (Run Script Phase).
+
+If per build runs affect productivity, linting should at least be run as part of the CI workflow.
+
+#### Linting rules
+We aim at using the same set of linting rules for most projects.
+An updated and curated SwiftLint configuration file can be found [here].
+
+When adding linting to an existing project, it could be easier to start by disabling some of the rules. Then, as you correct more issues, move againts the agreed configuration.   
+
+
 ## Discussions
 
 Accountability/ownership of code
