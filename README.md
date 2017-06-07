@@ -3,7 +3,7 @@ This guide outlines the coding conventions of the different development teams at
 
 [iOS](iOS.md)
 
-[Android](Android.md)
+[Android](Android/Android.md)
 
 [Add new plattform](https://github.com/nrkno/best-practice/pulls)
 
