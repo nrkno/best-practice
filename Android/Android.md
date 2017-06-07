@@ -57,3 +57,7 @@ android {
     }
 }
 ```
+
+## Kotlin 
+
+See "[Best practices for Kotlin](Kotlin.md)" 
