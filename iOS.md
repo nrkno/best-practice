@@ -115,10 +115,39 @@ In order to ensure both consistent code formatting and help us conform to establ
 [SwiftLint](https://github.com/realm/SwiftLint) is used in Swift based projects.
 
 #### Installation
+- Add to Podfile `pod 'SwiftLint’`
+- `pod install`
+- Add new run script in xcode: `"${PODS_ROOT}/SwiftLint/swiftlint"`
+- Add custom config to _(SRCROOT)_ in your project. Save it as **.swiftlint.yml** (_snippet below_👇 )
 
-[SwiftLint](https://github.com/realm/SwiftLint) can be installed locally (Homebrew/pre-built package) or added to your project as a CocoaPods package.
+```yml
+disabled_rules:
+  - force_cast
+  - force_try
+  - identifier_name
+  - type_name
+  - line_length
+  - unused_optional_binding
+  - nesting
+  - cyclomatic_complexity
+  - closure_parameter_position
+  - file_length
+  - function_parameter_count
+  - large_tuple
+  - todo
+excluded:
+  - Pods # important
+line_length: 120
+force_try:
+  severity: warning
+file_length: 500
+function_body_length: 100
+cyclomatic_complexity: 10
+shorthand_operator: warning
+```
 
-**TODO:** Decide local Installation vs CocoaPods
+If you're using terminal to e.g run [autocorrect command](https://github.com/realm/SwiftLint#auto-correct):
+`(SRCROOT)/Pods/SwiftLint/swiftlint autocorrect --config .swiftlint.yml`
 
 #### When to run
 Since SwiftLint is quite fast, our recommended setup is to run linting as part of the build process in XCode (Run Script Phase).
@@ -131,6 +160,7 @@ An updated and curated SwiftLint configuration file can be found [here].
 
 When adding linting to an existing project, it could be easier to start by disabling some of the rules. Then, as you correct more issues, move againts the agreed configuration.   
 
+The rules to config can be found here: [SwiftLint rules](https://github.com/realm/SwiftLint#configuration)
 
 ## Discussions
 
